@@ -73,7 +73,7 @@ if userInput == "1"{
         userInput2 = readLine() ?? "0"
         print("")
         if userInput2 != "0"{
-            items = "Chicken Satay"
+            items = "Nasi Padang"
             jumlah = userInput2 + " " + items
             shoopingCart.append(jumlah)
             print("Shopping Cart (\(shoopingCart.count) items)")
@@ -87,7 +87,7 @@ if userInput == "1"{
         userInput2 = readLine() ?? "0"
         print("")
         if userInput2 != "0"{
-            items = "Chicken Satay"
+            items = "Mineral Water"
             jumlah = userInput2 + " " + items
             shoopingCart.append(jumlah)
             print("Shopping Cart (\(shoopingCart.count) items)")
@@ -101,7 +101,7 @@ if userInput == "1"{
         userInput2 = readLine() ?? "0"
         print("")
         if userInput2 != "0"{
-            items = "Chicken Satay"
+            items = "Ice Tea"
             jumlah = userInput2 + " " + items
             shoopingCart.append(jumlah)
             print("Shopping Cart (\(shoopingCart.count) items)")
@@ -112,6 +112,8 @@ if userInput == "1"{
         
     }else if userInput == "q"{
         print("")
+    }else {
+        print("Option not available, please select again")
     }
 }
         
@@ -128,9 +130,13 @@ if userInput == "1"{
     }
 }
 
+}else if userInput == "x"{
+    exit(0)
+   
 }else{
     print("")
-    exit(0)
+    print("Option not available, please select again")
+    
     }
 }
 
